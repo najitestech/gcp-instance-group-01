@@ -7,6 +7,6 @@ variable "zone" {
 }  
   
 variable "region" {
-  default = ""
+  default = "us-east4"
 }  
   
