@@ -7,4 +7,5 @@ module "gci_test" {
   machine_type = "${var.machine_type}"
   disk_size    = "${var.disk_size}"
   disk_image   = "${var.disk_image}"
+  user_data    = "${var.user_data}"
 }
