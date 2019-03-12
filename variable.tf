@@ -14,3 +14,11 @@ variable "gcp-group-name"{
   default = "gcp-group-01"
 }
   
+variable "machine_type" {
+  default = "custom-2-2048"
+}
+
+variable "disksize" {
+  default = "20"
+}  
+  
