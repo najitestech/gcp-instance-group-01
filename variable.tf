@@ -33,4 +33,11 @@ variable "disk_image" {
 variable "user_data" {
   default = "My-test-user"
 }
+
+variable "bucket" {
+  default = "tf-state-prod"
+}
   
+variable "prefix" {
+  default = ""
+}  
