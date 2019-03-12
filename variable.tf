@@ -3,7 +3,7 @@ variable "ssh_public_key_file" {
 }
 
 variable "source" {
-  default = "https://gitlab.com/najitesit/gcp-instance-group-01.git"
+  default = "https://github.com/najitestech/terraform-google-compute-instance.git"
 }  
 
 variable "zone" {
