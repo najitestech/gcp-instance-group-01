@@ -1,6 +1,6 @@
 #terraform {
 #  backend "gcs" {
-#    bucket  = "tf-state-prod"
+#    bucket  = "default"
 #    prefix  = "terraform.state"
 #  }
 #}
