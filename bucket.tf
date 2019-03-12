@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "My-terraform-bucket-01" {
+resource "google_storage_bucket" "najites-bucket-01" {
   name     = "${var.bucket}"
   location = "US"
 
