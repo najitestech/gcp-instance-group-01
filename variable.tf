@@ -8,5 +8,9 @@ variable "zone" {
   
 variable "region" {
   default = "us-east4"
-}  
+}
+
+variable "gcp-group-name"{
+  default = "gcp-group-01"
+}
   
