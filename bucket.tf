@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "default" {
-  name     = "default"
+  name     = "${var.bucket}"
   location = "US"
 
   website {
