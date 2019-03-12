@@ -31,6 +31,6 @@ variable "disk_image" {
 }
 
 variable "user_data" {
-  dafault = "My-test-user"
+  default = "My-test-user"
 }
   
