@@ -22,7 +22,7 @@ variable "machine_type" {
   default = "n1-standard-1"
 }
 
-variable "disksize" {
+variable "disk_size" {
   default = "20"
 }  
   
