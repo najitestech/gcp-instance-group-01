@@ -6,5 +6,5 @@ module "gci_test" {
   name_prefix  = "${gcp-group-name}"
   machine_type = "${var.machine_type}"
   disk_size    = "${var.disk_size}"
-  disk_image   = "${data.google_compute_image.coreos_stable.self_link}"
+  disk_image   = "${var.disk_image}"
 }
