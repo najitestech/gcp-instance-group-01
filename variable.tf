@@ -19,7 +19,7 @@ variable "gcp-group-name"{
 }
   
 variable "machine_type" {
-  default = "custom-2-2048"
+  default = "n1-standard-1"
 }
 
 variable "disksize" {
