@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "najites-bucket-01" {
+resource "google_storage_bucket" "najites-bucket-2020" {
   name     = "${var.bucket}"
   location = "US"
 
