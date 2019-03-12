@@ -14,6 +14,10 @@ variable "region" {
   default = "us-east4"
 }
 
+variable "counts" {
+  default = "1"
+}
+
 variable "gcp-group-name"{
   default = "gcp-group-01"
 }
@@ -37,7 +41,3 @@ variable "user_data" {
 variable "bucket" {
   default = "tf-state-prod"
 }
-  
-variable "prefix" {
-  default = "terraform.state"
-}  
