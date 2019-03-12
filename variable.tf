@@ -30,4 +30,7 @@ variable "disk_image" {
   default = "centos-7-v20190213"
 }
 
+variable "user_data" {
+  dafault = "My-test-user"
+}
   
