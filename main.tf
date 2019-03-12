@@ -3,7 +3,7 @@ module "mig1" {
   version           = "1.1.14"
   region            = "${var.region}"
   zone              = "${var.zone}"
-  name              = "gcp-group-01"
+  name              = "${var.gcp-group-name}"
   size              = 2
   service_port      = 80
   service_port_name = "http"
