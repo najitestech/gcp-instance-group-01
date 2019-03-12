@@ -24,5 +24,10 @@ variable "machine_type" {
 
 variable "disk_size" {
   default = "20"
-}  
+}
+
+variable "disk_image" {
+  default = "centos-7-v20190213"
+}
+
   
