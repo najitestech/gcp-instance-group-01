@@ -39,5 +39,5 @@ variable "bucket" {
 }
   
 variable "prefix" {
-  default = ""
+  default = "terraform.state"
 }  
