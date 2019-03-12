@@ -1,5 +1,5 @@
 module "gci_test" {
-  source = "${var.source}"
+  source = "https://github.com/najitestech/terraform-google-compute-instance.git"
 
   amount       = 3
   region       = "${var.region}"
