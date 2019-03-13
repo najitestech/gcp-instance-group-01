@@ -1,6 +1,6 @@
-#terraform {
-#  backend "gcs" {
-#    bucket  = "terraform-state-2020"
-#    prefix  = "terraform/state"
-#  }
-#}
+terraform {
+  backend "remote" {   #gcp
+    bucket  = "terraform-state-2020"
+    prefix  = "terraform/state"
+  }
+}
