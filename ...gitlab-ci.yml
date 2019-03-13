@@ -10,11 +10,11 @@ before_script:
   - git submodule sync --recursive
   - git submodule update --init --recursive
   - terraform --version
-  - mkdir ~/.gcp
-  - touch ~/.gcp/credentials
-  - echo $GOOGLE_APPLICATION_CREDENTIALS > ~/.gcp/credentials
-#  - echo $aws_access_key >> ~/.aws/credentials
-#  - echo $aws_secret_key >> ~/.aws/credentials
+  - mkdir ~/.aws
+  - touch ~/.aws/credentials
+  - echo $default > ~/.aws/credentials
+  - echo $aws_access_key >> ~/.aws/credentials
+  - echo $aws_secret_key >> ~/.aws/credentials
   - terraform init
   - uptime
   - df -h
