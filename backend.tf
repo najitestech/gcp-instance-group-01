@@ -1,6 +1,7 @@
 terraform {
   backend "gcs" {
     bucket  = "terraform-state-2020"
-    prefix  = "terraform/state"
+    prefix  = "terraform/state.tfstate"
+    credentials = ""
   }
 }
