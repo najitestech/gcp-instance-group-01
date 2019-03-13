@@ -8,12 +8,12 @@
 #  }
 #}
 
-#terraform {
-#  backend "s3" {
-#    bucket = "devops-bucket-01"
-#    key    = "terraform-state-file"
-#    region = "us-east-1"
-#    encrypt = "true"
-#    profile = "default"
-#  }
-#}
+terraform {
+  backend "s3" {
+    bucket = "devops-bucket-01"
+    key    = "terraform-state-file"
+    region = "us-east-1"
+    encrypt = "true"
+    profile = "default"
+  }
+}
