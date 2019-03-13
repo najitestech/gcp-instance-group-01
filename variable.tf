@@ -39,5 +39,5 @@ variable "user_data" {
 }
 
 variable "bucket" {
-  default = "tf-state-prod"
+  default = "terrafom-state-2020"
 }
