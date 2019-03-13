@@ -39,5 +39,5 @@ variable "user_data" {
 }
 
 variable "bucket" {
-  default = "terrafom-state-2020"
+  default = "terraform-bucket-2020"
 }
