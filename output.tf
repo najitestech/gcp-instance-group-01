@@ -1,5 +1,5 @@
 output "gci_test_id" {
-  value = "gci_test_id"
+  value = "gci_test_ExternalIP_id"
 }
 
 #output "this_launch_configuration_id" {
