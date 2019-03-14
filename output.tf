@@ -1,5 +1,5 @@
-output "gci_test_id" {
-  value = "gci_test_ExternalIP_id"
+output "id" {
+  value = "google_project.gci_test.id"
 }
 
 #output "this_launch_configuration_id" {
