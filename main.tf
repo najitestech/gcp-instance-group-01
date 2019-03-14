@@ -23,4 +23,3 @@ module "gce-ilb" {
 #   { group = "${module.gci_test.instance_group}" },
 #    { group = "${module.mig3.instance_group}" },
 # ]
-}
