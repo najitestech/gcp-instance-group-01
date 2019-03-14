@@ -1,3 +1,8 @@
-output "gci_test" {
-  value = "${join(",", google_compute_address.instances.*.gci_test)}"
+output "gci_test_id" {
+  value = "gci_test_id"
 }
+
+#output "this_launch_configuration_id" {
+#  description = "The ID of the launch configuration"
+#  value       = "${local.this_launch_configuration_id}"
+#}
