@@ -10,7 +10,7 @@ module "gci_test" {
   user_data    = "${var.user_data}"
 }
 
-module "gce_test" {
+module "gci_test2" {
   source = "github.com/matti/terraform-google-compute-instance"
 
   amount       = "${var.counts}"
