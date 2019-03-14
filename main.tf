@@ -14,7 +14,7 @@ resource "google_compute_instance" "Centos" {
    count = "1"
    name         = "web-server"
    machine_type = "${var.machine_type}"
-   zone         = "${var.zone"
+   zone         = "${var.zone}"
 
    boot_disk {
      initialize_params {
