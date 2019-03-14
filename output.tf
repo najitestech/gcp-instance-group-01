@@ -1,5 +1,5 @@
 output "ip_address" {
- value = "${module.gci_test.external_ip_addresses.0.access_config.0.assigned_nat_ip}"
+ value = "${module.gci_test.external_ip_addresses_id}"
 }
 
 #output "this_launch_configuration_id" {
