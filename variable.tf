@@ -7,7 +7,7 @@ variable "source" {
 }  
 
 variable "zone" {
-  default = "us-east4"
+  default = "us-east4-a"
 }  
   
 variable "region" {
