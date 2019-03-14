@@ -1,5 +1,5 @@
-output "id" {
-  value = "google_project.gci_test.id"
+output "externalip" {
+ value = "${google_compute_instance.nomad.*.network_interface.0.access_config.0.assigned_nat_ip}"
 }
 
 #output "this_launch_configuration_id" {
