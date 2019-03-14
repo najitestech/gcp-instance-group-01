@@ -1,3 +1,3 @@
-output "addresses" {
-  value = "${join(",", google_compute_address.instances.*.address)}"
+output "gci_test" {
+  value = "${join(",", google_compute_address.instances.*.gci_test)}"
 }
