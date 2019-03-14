@@ -23,7 +23,7 @@ variable "gcp-group-name"{
 }
 
 variable "gcp-group-name2"{
-  default = "gcp-group-02"
+  default = "gcp-group-010"
 }
   
 variable "machine_type" {
