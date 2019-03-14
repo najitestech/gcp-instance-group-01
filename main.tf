@@ -18,8 +18,8 @@ module "gce-ilb" {
   health_port    = "${module.gci_test.service_port}"
   source_tags    = ["${module.gci_test.target_tags}"]
   target_tags    = ["${module.gci_test.target_tags}" ##,"${module.mig3.target_tags}"]
-  backends       = ["
-    { group = "${module.gci_test.instance_group}" },
+  backends       = ["${module.gci_test.instance_group}"]
+#   { group = "${module.gci_test.instance_group}" },
 #    { group = "${module.mig3.instance_group}" },
-  "]
+# ]
 }
