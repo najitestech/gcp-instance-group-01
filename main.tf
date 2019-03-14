@@ -18,12 +18,12 @@ module "gce-ilb" {
   disk_size    = "${var.disk_size}"
   disk_image   = "${var.disk_image}"
   user_data    = "${var.user_data}"
-  ports          = ["${module.gci_test}"]
-  health_port    = "${module.gci_test}"
-  source_tags    = ["${module.gci_test}"]
-  target_tags    = ["${module.gci_test}"] #,"${module.mig3.target_tags}"]
+  ports          = ["${module.gci_test.service_port}"]
+  health_port    = "${module.gci_test.service_port}"
+  source_tags    = ["${module.gci_test.target_tags}"]
+  target_tags    = ["${module.gci_test.target_tags}"] #,"${module.mig3.target_tags}"]
  backends       = [
-   { group = "${module.gci_test}" },
+   { group = "${module.gci_test.instance_group}" },
 #    { group = "${module.mig3.instance_group}" },
  ]
 }
