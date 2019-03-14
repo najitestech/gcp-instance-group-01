@@ -19,7 +19,7 @@ variable "counts" {
 }
 
 variable "gcp-group-name"{
-  default = "gcp-group-01"
+  default = "gcp-group-01" (count.index + 1)
 }
   
 variable "machine_type" {
