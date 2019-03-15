@@ -8,6 +8,7 @@ module "gci_test" {
   disk_size    = "${var.disk_size}"
   disk_image   = "${var.disk_image}"
   user_data    = "${var.user_data}"
+  metadata_startup_script = "${file("${path.module}/centos-scripts.sh")}"
 }
 
 resource "google_compute_instance" "Centos" {
@@ -18,7 +19,7 @@ resource "google_compute_instance" "Centos" {
 
    boot_disk {
      initialize_params {
-     image = "${var.machine_type}"
+     image = "${var.disk_image}"
     }
 }
 
