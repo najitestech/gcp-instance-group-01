@@ -71,15 +71,13 @@ destroy:
     - plan
   after_script:
     - echo "Successfully Destroyed" 
-  when: always
+  when: manual
   
 refresh:
   stage: destroy
   script:
     - terraform refresh
   dependencies:
-    - plan
+    - destroy
   after_script:
     - echo "Refresh Successful!!" 
-#  only:
-#  - destroy
