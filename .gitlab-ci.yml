@@ -81,5 +81,5 @@ refresh:
     - plan
   after_script:
     - echo "Refresh Successful!!" 
-  only:
-  - destroy
+#  only:
+#  - destroy
