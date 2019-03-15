@@ -67,8 +67,8 @@ destroy:
   stage: destroy
   script:
     - terraform  destroy --auto-approve
-  dependencies:
-    - destroy
+#  dependencies:
+#    - plan
   after_script:
     - echo "Successfully Destroyed" 
   when: manual
