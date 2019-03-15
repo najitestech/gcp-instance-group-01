@@ -18,7 +18,7 @@ resource "google_compute_instance" "Centos" {
 
    boot_disk {
      initialize_params {
-     image = "centos-7"
+     image = "${var.machine_type}"
     }
 }
 
@@ -29,7 +29,7 @@ network_interface {
 }
 
     #metadata_startup_script = "yum update && yum install -y httpd && yum innstall -y figlet"
-#metadata_startup_script = "${file("${path.module}/centos_scripts.sh")}"
+metadata_startup_script = "${file("${path.module}/centos_scripts.sh")}"
 
 service_account {
   scopes = ["userinfo-email", "compute-ro", "storage-ro"]
