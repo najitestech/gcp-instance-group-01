@@ -71,7 +71,7 @@ destroy:
     - plan
   after_script:
     - echo "Successfully Destroyed" 
-  when: manual
+  when: always
   
 refresh:
   stage: destroy
@@ -82,4 +82,4 @@ refresh:
   after_script:
     - echo "Refresh Successful!!" 
   only:
-  - tags
+  - destroy
