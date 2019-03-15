@@ -70,8 +70,8 @@ destroy:
     - echo "Successfully Destroyed" 
   when: manual
   
-  refresh:
-  stage: refresh
+refresh:
+  stage: destroy
   script:
     - terraform refresh
   dependencies:
