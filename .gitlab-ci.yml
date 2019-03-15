@@ -28,6 +28,7 @@ stages:
   - plan
   - apply
   - destroy
+  - refresh
 
 validate:
   stage: validate
@@ -46,7 +47,7 @@ plan:
   script:    
     - terraform plan
   after_script:
-    - echo "Plan Successfuly" 
+    - echo "Plan Successful" 
     
 
 apply:
@@ -56,7 +57,7 @@ apply:
   dependencies:
     - plan
   after_script:
-    - echo "Successfuly Applied" 
+    - echo "Successfully Applied" 
   when: manual
 
 destroy:
@@ -66,5 +67,15 @@ destroy:
   dependencies:
     - plan
   after_script:
-    - echo "Successfuly Destroyed" 
+    - echo "Successfully Destroyed" 
   when: manual
+  
+  refresh:
+  stage: destroy
+  script:
+    - terraform  refresh
+  dependencies:
+    - plan
+  after_script:
+    - echo "Refresh Successful!!" 
+  when: always
