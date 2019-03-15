@@ -26,6 +26,7 @@ after_script:
 stages:
   - validate
   - plan
+  - plan2
   - apply
   - destroy
   - refresh
@@ -34,22 +35,24 @@ validate:
   stage: validate
   script:
     - terraform validate
-  script:    
-    - terraform plan
   after_script:
     - echo "Successfuly Validated" 
     
 
 plan:
-  stage: validate
+  stage: plan
   script:
-    - terraform validate
-  script:    
     - terraform plan
   after_script:
     - echo "Plan Successful" 
     
-
+plan2:
+  stage: plan
+  script:
+    - terraform plan
+  after_script:
+    - echo "Plan2 Successful"
+    
 apply:
   stage: apply
   script:
@@ -58,7 +61,7 @@ apply:
     - plan
   after_script:
     - echo "Successfully Applied" 
-  when: manual
+  when: always
 
 destroy:
   stage: destroy
@@ -78,4 +81,5 @@ refresh:
     - plan
   after_script:
     - echo "Refresh Successful!!" 
-  when: always
+  only:
+  - tags
