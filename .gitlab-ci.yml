@@ -78,7 +78,7 @@ refresh:
   script:
     - terraform refresh
   dependencies:
-    - destroy
+    - plan
   after_script:
     - echo "Refresh Successful!!" 
   when: always
