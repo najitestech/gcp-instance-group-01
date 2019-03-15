@@ -28,8 +28,8 @@ network_interface {
     // Ephemeral IP
 }
 
-    #metadata_startup_script = "yum update && yum install -y httpd && yum innstall -y figlet"
-metadata_startup_script = "${file("${path.module}/centos-scripts.sh")}"
+    metadata_startup_script = "yum update && yum install -y httpd && sudo yum install -y figlet* && sudo yum -y install ansible*"
+#metadata_startup_script = "${file("${path.module}/centos-scripts.sh")}"
 
 service_account {
   scopes = ["userinfo-email", "compute-ro", "storage-ro"]
