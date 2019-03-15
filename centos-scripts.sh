@@ -3,7 +3,7 @@
 sudo yum update -y
 sudo yum -y install -y wget
 wget http://pkgs.repoforge.org/figlet/figlet-2.2.2-1.el6.rf.x86_64.rpm
-rpm -Uvh epel-release*rpm
+sudo yum install epel-release*
 sudo yum install -y figlet
 sudo yum install -y httpd
 cat <<EOF > /var/www/html/index.html
