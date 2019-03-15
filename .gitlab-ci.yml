@@ -67,14 +67,14 @@ destroy:
   stage: destroy
   script:
     - terraform  destroy --auto-approve
-#  dependencies:
-#    - plan
+  dependencies:
+    - plan
   after_script:
     - echo "Successfully Destroyed" 
   when: manual
   
 refresh:
-  stage: destroy
+  stage: refresh
   script:
     - terraform refresh
   dependencies:
