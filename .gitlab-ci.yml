@@ -61,7 +61,7 @@ apply:
     - plan
   after_script:
     - echo "Successfully Applied" 
-  when: always
+  when: manual
 
 destroy:
   stage: destroy
@@ -74,7 +74,7 @@ destroy:
   when: manual
   
 refresh:
-  stage: refresh
+  stage: destroy
   script:
     - terraform refresh
   dependencies:
