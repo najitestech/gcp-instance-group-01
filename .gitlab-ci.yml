@@ -71,9 +71,9 @@ destroy:
   when: manual
   
   refresh:
-  stage: destroy
+  stage: refresh
   script:
-    - terraform  refresh
+    - terraform refresh
   dependencies:
     - plan
   after_script:
