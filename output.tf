@@ -1,4 +1,4 @@
-output "gci_test" {
+output "module" {
  value = "${module.gci_test.ip_address}"
 }
            #${google_compute_forwarding_rule.default.ip_address
