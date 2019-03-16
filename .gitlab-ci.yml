@@ -1,5 +1,5 @@
 image:
-  name: jonatanblue/gitlab-ci-terraform:latest #hashicorp/terraform:light
+  name: hashicorp/terraform:light
   entrypoint:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin'
@@ -27,6 +27,7 @@ stages:
   - validate
   - plan
   - plan2
+  - version
   - apply
   - destroy
   - refresh
@@ -52,6 +53,13 @@ plan2:
     - terraform plan
   after_script:
     - echo "Plan2 Successful"
+
+version:
+  stage: plan
+  script:
+    - terraform plan
+  after_script:
+    - echo "Vesrsion has been Successfully identified"    
     
 apply:
   stage: apply
