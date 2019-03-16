@@ -1,8 +1,9 @@
-#output "ip_address" {
-# value = "${module.gci_test.External_IP_id}"
-#}
+output "ip_address" {
+ value = "${module.gci_test.ip_address"
+}
+           #${google_compute_forwarding_rule.default.ip_address
 
-#output "this_launch_configuration_id" {
-#  description = "The ID of the launch configuration"
-#  value       = "${local.this_launch_configuration_id}"
-#}
+output "Centos" {
+  description = "The ID of the launch configuration"
+  value       = "${google_compute_instance.Centos.ip_address}"
+}
