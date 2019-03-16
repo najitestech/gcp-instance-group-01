@@ -14,6 +14,10 @@ variable "region" {
   default = "us-east4"
 }
 
+variable "region2" {
+  default = "us-east1"
+}
+
 variable "counts" {
   default = "1"
 }
