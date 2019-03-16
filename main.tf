@@ -40,7 +40,7 @@ module "app-server" {
   source = "github.com/matti/terraform-google-compute-instance"
 
   amount       = "${var.counts}"
-  region       = "${var.region}"
+  region       = "${var.region2}"
   name_prefix  = "${var.gcp-group-name2}"
   machine_type = "${var.machine_type}"
   disk_size    = "${var.disk_size}"
