@@ -10,18 +10,6 @@ module "gci_test" {
   user_data    = "${var.user_data}"
 }
 
-module "gci_test2" {
-  source = "github.com/najitestech/terraform-google-compute-instance.git"
-
-  amount       = 3
-  region       = "us-east1"
-  name_prefix  = "test"
-  machine_type = "${var.machine_type}"
-  disk_size    = "20"
-  disk_image   = "${var.disk_image}"
-  user_data    = "test"
-}
-
 resource "google_compute_instance" "Centos" {
    count = "4"
    name         = "web-server${count.index + 1}"
