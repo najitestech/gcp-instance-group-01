@@ -19,6 +19,7 @@ module "gci_test2" {
   machine_type = "${var.machine_type}"
   disk_size    = "20"
   disk_image   = "${var.disk_image}"
+  user_data    = "test"
 }
 
 resource "google_compute_instance" "Centos" {
