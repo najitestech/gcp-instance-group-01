@@ -1,5 +1,5 @@
 module "mig1" {
-  source            = "GoogleCloudPlatform/managed-instance-group/google"
+  source            = "github.com/matti/terraform-google-compute-instance"
   version           = "1.1.14"
   region            = "${var.region}"
   zone              = "${var.zone}"
