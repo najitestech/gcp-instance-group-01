@@ -1,7 +1,7 @@
 module "gci_test" {
   source = "github.com/matti/terraform-google-compute-instance"
 
-  amount       = "${var.counts}
+  amount       = "${var.counts}"
   region       = "${var.region}"
   name_prefix  = "${var.gcp-group-name}${count.index + 1}"
   machine_type = "${var.machine_type}"
