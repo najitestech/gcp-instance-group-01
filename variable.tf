@@ -39,7 +39,7 @@ variable "disk_image" {
 }
 
 variable "user_data" {
-  default = "My-test-user-(count.index + 1)"
+  default = "My-test-user"
 }
 
 variable "bucket" {
