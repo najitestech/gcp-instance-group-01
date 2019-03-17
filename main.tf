@@ -1,5 +1,5 @@
 module "gci_test" {
-  source = "github.com/matti/terraform-google-compute-instance"
+  source = "https://github.com/najitestech/terraform-google-compute-instance.git"
 
   amount       = "${var.counts}"
   region       = "${var.region}"
@@ -11,7 +11,7 @@ module "gci_test" {
 }
 
 module "gci_test2" {
-  source = "github.com/matti/terraform-google-compute-instanc"
+  source = "https://github.com/najitestech/terraform-google-compute-instance.git"
 
   amount       = 3
   region       = "us-east1"
