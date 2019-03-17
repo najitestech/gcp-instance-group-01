@@ -1,18 +1,3 @@
-module "gci_test2" {
-  source            = "github.com/matti/terraform-google-compute-instance"
-  version           = "1.1.14"
-  region            = "${var.region}"
-  zone              = "${var.zone}"
-  name              = "group1"
-  size              = 2
-  service_port      = 80
-  service_port_name = "http"
-  http_health_check = false
-#  target_pools      = ["${module.gci_test.target_pool}"]
-  target_tags       = ["allow-service1"]
-  ssh_source_ranges = ["0.0.0.0/0"]
-}
-
 module "gci_test" {
   source = "github.com/matti/terraform-google-compute-instance"
 
