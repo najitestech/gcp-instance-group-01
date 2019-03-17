@@ -15,7 +15,7 @@ variable "region" {
 }
 
 variable "counts" {
-  default = "1"
+  default = "4"
 }
 
 variable "gcp-group-name"{
