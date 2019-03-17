@@ -8,7 +8,7 @@ module "mig1" {
   service_port      = 80
   service_port_name = "http"
   http_health_check = false
-  target_pools      = ["${module.gci_test.target_pool}"]
+#  target_pools      = ["${module.gci_test.target_pool}"]
   target_tags       = ["allow-service1"]
   ssh_source_ranges = ["0.0.0.0/0"]
 }
