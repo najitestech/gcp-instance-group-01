@@ -11,7 +11,7 @@ module "gci_test" {
 }
 
 resource "google_compute_instance" "Centos" {
-   count = "2"
+   count = "3"
    name         = "web-server${count.index + 1}"
    machine_type = "${var.machine_type}"
    zone         = "${var.zone}"
