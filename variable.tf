@@ -19,7 +19,7 @@ variable "counts" {
 }
 
 variable "gcp-group-name"{
-  default = "gcp-group-01"
+  default = "gcp-group${count.index + 1}"
 }
 
 variable "gcp-group-name2"{
@@ -39,7 +39,7 @@ variable "disk_image" {
 }
 
 variable "user_data" {
-  default = "My-test-user"
+  default = "My-test-user${count.index + 1}"
 }
 
 variable "bucket" {
