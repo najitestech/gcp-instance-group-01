@@ -1,4 +1,4 @@
-module "mig1" {
+module "gci_test2" {
   source            = "github.com/matti/terraform-google-compute-instance"
   version           = "1.1.14"
   region            = "${var.region}"
